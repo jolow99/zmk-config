@@ -38,7 +38,7 @@
 // | SHFT |     |     |      |     |     |   |     |  !   | @    |  #   |   )  |      |
 //                    | GUI  |     | SPC |   | ENT | MO3 | ALT |
                         bindings = <
-   &kp TAB    &trans   &trans       &kp   UP     &trans     &trans         &trans   &kp AMPS   &kp KP_MULTIPLY &kpLPAR   &kp N0   &kp BSPC
+   &kp TAB    &trans   &trans       &kp   UP     &trans     &trans         &trans   &kp AMPS   &kp KP_MULTIPLY &kp LPAR   &kp N0   &kp BSPC
    &kp LCTRL  &trans   &kp LEFT     &kp DOWN     &kp RIGHT  &trans         &trans   &kp DLLR   &kp PRCNT       &kp CARET &trans   &trans
    &kp LSHFT  &trans   &trans       &trans       &trans     &trans         &trans   &kp EXCL   &kp AT          &kp HASH  &kp RPAR &trans
                           	        &kp LGUI     &trans   &kp SPACE      &kp RET  &mo ADJUST &kp RALT
