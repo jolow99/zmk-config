@@ -21,40 +21,40 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  ;  | BKSP |
-// | SHFT |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  |  '   |
-// | CTRL |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  /  | ENT  |
+// | CTRL |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  |  '   |
+// | SHFT |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  /  | ENT  |
 //                    | GUI | LWR | SPC |   | ESC | RSE  | ALT |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI    &kp BSPC
-   &kp LSHFT &kp A &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O &kp SQT
-   &kp LCTRL &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp RET
+   &kp LCTRL &kp A &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O &kp SQT
+   &kp LSHFT &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp RET
                   &kp LGUI &mo 1 &kp SPACE   &kp ESC &mo 2 &kp RALT
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// |      |     |     |     |     |     |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT | OUT |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT | MO3 | ALT |
+// |  TAB |     |     |  UP  |     |     |   |     |  &  |  *  |  (  |  0  | BKSP |
+// | CTRL |     | LFT |  DWN | RGT |     |   |     |  $  | %   |  ^   |     |      |
+// | SHFT |     |     |      |     |     |   |     |  !   | @    |  #   |   )  |      |
+//                    | GUI  |     | SPC |   | ENT | MO3 | ALT |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &trans     &trans       &trans       &trans       &trans       &trans    &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &out OUT_BLE &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                          	        &kp LGUI     &trans       &kp SPACE      &kp RET  &mo ADJUST   &kp RALT
+   &kp TAB    &trans   &trans       &kp   UP     &trans     &trans         &trans   &kp AMPS   &kp KP_MULTIPLY &kp LPAR   &kp N0   &kp BSPC
+   &kp LCTRL  &trans   &kp LEFT     &kp DOWN     &kp RIGHT  &trans         &trans   &kp DLLR   &kp PRCNT       &kp CARET &trans   &trans
+   &kp LSHFT  &trans   &trans       &trans       &trans     &trans         &trans   &kp EXCL   &kp AT          &kp HASH  &kp RPAR &trans
+                          	        &kp LGUI     &trans   &kp SPACE      &kp RET  &mo ADJUST &kp RALT
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+// |  TAB | `/~ |     |     |     |     |   |     |  7   |   8 |  9   |  -   | = |
+// | CTRL |     |     |     |     |     |   |     |  4   |  5 |  6   |  [   |  ]   |
+// | SHFT |     |     |     |     |     |   |     |  1   |  2  |   3   |  0    |  \   |
 //                    | GUI | MO3 | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+   &kp  TAB  &kp GRAVE &trans &trans   &trans   &trans      &trans    &kp N7    &kp N8  &kp N9 &kp MINUS &kp EQUAL
+   &kp LCTRL &trans    &trans &trans   &trans   &trans      &trans    &kp N4    &kp N5  &kp N6 &kp LBKT  &kp RBKT
+   &kp LSHFT &trans    &trans &trans   &trans   &trans      &trans    &kp N1    &kp N2  &kp N3 &kp N0    &kp BSLH
                     	     &kp LGUI &mo ADJUST   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
@@ -66,7 +66,7 @@
 // |---------+--------+--------+--------+---------+---------|       |--------+--------+---------+---------+----------+-------------|
 // |  BTCLR  |  BT1   |  BT2   |  BT3   |  BT4    |  BT5    |       |  VOL-  |        |         |         |          |             |
 // |---------+--------+--------+--------+---------+---------|       |--------+--------+---------+---------+----------+-------------|
-// |         |        |        |        |         |         |       |  PLAY  |        |         |         |          |             |
+// |         | OUT    |        |        |         |         |       |  PLAY  |        |         |         |          |             |
 // '---------------------------+--------+---------+---------+       |--------+--------+---------+----------------------------------'
 //                             |        |         |         |       |        |        |         |
 //                             '--------+---------+---------'       '--------+--------+---------'
@@ -74,7 +74,7 @@
                         bindings = <
    &trans      &trans          &trans         &trans          &trans          &trans            &kp C_VOLUME_UP    &trans &trans &trans &trans &trans
    &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4      &kp C_VOLUME_DOWN  &trans &trans &trans &trans &trans
-   &trans      &trans          &trans         &trans          &trans          &trans            &kp C_PLAY_PAUSE   &trans &trans &trans &trans &trans
+   &trans      &out OUT_BLE     &trans         &trans          &trans          &trans            &kp C_PLAY_PAUSE   &trans &trans &trans &trans &trans
                                    &trans &trans &trans   &trans &trans &trans
                         >;
                 };
